@@ -19,8 +19,9 @@ RUN apk add --no-cache \
 RUN pip3 install --no-cache-dir --break-system-packages --upgrade pip setuptools wheel
 
 # Requirements dosyasini kopyala ve paketleri kur
+# --no-build-isolation: build environment'ta sistem setuptools'unu kullan
 COPY requirements.txt /tmp/
-RUN pip3 install --no-cache-dir --break-system-packages -r /tmp/requirements.txt
+RUN pip3 install --no-cache-dir --break-system-packages --no-build-isolation -r /tmp/requirements.txt
 
 # Uygulama dosyalari
 COPY . /app
