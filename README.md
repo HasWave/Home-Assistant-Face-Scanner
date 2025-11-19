@@ -1,4 +1,4 @@
-# 🎭 Home Assistant Face Scanner
+# 🎭 Home Assistant Face Recognition
 
 <div align="center">
 
@@ -219,3 +219,4 @@ Bu proje MIT lisansı altında lisanslanmıştır.
 Made with ❤️ by HasWave
 
 </div>
+
