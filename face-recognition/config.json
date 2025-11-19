@@ -1,5 +1,5 @@
 {
-  "name": "HasWave Yuz Tanima",
+  "name": "HasWave Face Recognition",
   "version": "1.0.2",
   "slug": "haswave_face_rec",
   "description": "Yerel agda calisan, share/yuzler klasorunden ogrenen yuz tanima sistemi. Local face recognition system that works on local network, learns from share/yuzler folder.",
@@ -30,3 +30,4 @@
     "armv7": "ghcr.io/home-assistant/armv7-base:latest"
   }
 }
+
