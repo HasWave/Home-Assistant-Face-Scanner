@@ -44,6 +44,8 @@ Yukarıdaki **"Add add-on repository"** butonuna tıklayarak veya manuel olarak:
 2. **HasWave Yuz Tanima** eklentisini seçin
 3. **INSTALL** butonuna tıklayın
 
+**⚠️ Önemli:** İlk kurulum **15-30 dakika** sürebilir. Bu normaldir çünkü `dlib` ve `opencv-python-headless` paketleri kaynak kodundan derlenmektedir. Lütfen sabırla bekleyin, build işlemi arka planda devam edecektir.
+
 ### 3️⃣ Yapılandırma
 
 #### Yüz Fotoğraflarını Ekleme
@@ -219,4 +221,5 @@ Bu proje MIT lisansı altında lisanslanmıştır.
 Made with ❤️ by HasWave
 
 </div>
+
 
