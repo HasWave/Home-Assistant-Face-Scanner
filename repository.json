@@ -1,0 +1,7 @@
+{
+  "name": "HasWave Home Assistant Add-ons",
+  "url": "https://github.com/HasWave/Home-Assistant-Yuz-Tanima",
+  "maintainer": "HasWave",
+  "web": "https://haswave.com",
+  "homeassistant": "2023.6.0"
+}
