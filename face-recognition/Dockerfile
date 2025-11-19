@@ -33,8 +33,10 @@ ENV CMAKE_ARGS="-DCMAKE_BUILD_TYPE=Release"
 ENV SKBUILD_CONFIGURE_OPTIONS="-DCMAKE_BUILD_TYPE=Release"
 
 RUN pip3 install --no-cache-dir --break-system-packages --no-build-isolation \
-    --build-option="--cmake-args=-DCMAKE_BUILD_TYPE=Release" \
     opencv-python-headless==4.8.1.78 || \
+    (echo "opencv build hatasi (no isolation), build isolation ile deneniyor..." && \
+     pip3 install --no-cache-dir --break-system-packages \
+     opencv-python-headless==4.8.1.78) || \
     (echo "opencv build hatasi, daha eski versiyon deneniyor..." && \
      pip3 install --no-cache-dir --break-system-packages --no-build-isolation \
      opencv-python-headless==4.8.0.76)
