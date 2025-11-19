@@ -59,7 +59,8 @@ COPY . /app
 WORKDIR /app
 
 # s6-overlay servis yapılandırması
-COPY rootfs/ /
+RUN mkdir -p /etc/services.d/face-recognition
+COPY rootfs/etc/services.d/face-recognition/run /etc/services.d/face-recognition/run
 
 # Servis script'lerine execute izni ver
 RUN chmod +x /etc/services.d/face-recognition/run
