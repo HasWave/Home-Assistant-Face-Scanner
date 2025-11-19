@@ -24,5 +24,9 @@
     "mqtt_pass": "str",
     "tolerance": "float"
   },
-  "image": "python:3.9-slim"
+  "build_from": {
+    "aarch64": "ghcr.io/hassio-addons/base/aarch64:14.0.0",
+    "amd64": "ghcr.io/hassio-addons/base/amd64:14.0.0",
+    "armv7": "ghcr.io/hassio-addons/base/armv7:14.0.0"
+  }
 }
