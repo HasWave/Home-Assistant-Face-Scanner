@@ -25,8 +25,8 @@
     "tolerance": "float"
   },
   "build_from": {
-    "aarch64": "ghcr.io/hassio-addons/base/aarch64:14.0.0",
-    "amd64": "ghcr.io/hassio-addons/base/amd64:14.0.0",
-    "armv7": "ghcr.io/hassio-addons/base/armv7:14.0.0"
+    "aarch64": "ghcr.io/home-assistant/aarch64-base:latest",
+    "amd64": "ghcr.io/home-assistant/amd64-base:latest",
+    "armv7": "ghcr.io/home-assistant/armv7-base:latest"
   }
 }
