@@ -1,18 +1,19 @@
 ARG BUILD_FROM
-FROM ${BUILD_FROM:-python:3.9-slim}
+FROM ${BUILD_FROM}
 
-# Gerekli paketler (Debian/Ubuntu tabanli)
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends \
+# Gerekli paketler (Alpine tabanli)
+RUN apk add --no-cache \
     cmake \
-    build-essential \
-    libjpeg-dev \
-    zlib1g-dev \
-    libopenblas-dev \
+    build-base \
+    python3-dev \
+    py3-pip \
+    jpeg-dev \
+    zlib-dev \
+    openblas-dev \
     libffi-dev \
-    libgl1-mesa-glx \
-    libglib2.0-0 \
-    && rm -rf /var/lib/apt/lists/*
+    mesa-gl \
+    glib-dev \
+    linux-headers
 
 # Python kutuphaneleri
 COPY requirements.txt /tmp/
